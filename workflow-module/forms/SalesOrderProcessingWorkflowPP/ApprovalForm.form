@@ -15,8 +15,8 @@
                     "id": "shiptoparty",
                     "type": "string",
                     "label": "ShipToParty",
-                    "readOnly": false,
-                    "value": "${context.shipToParty}",
+                    "readOnly": true,
+                    "value": "${context.salesOrderDetails.shipToParty}",
                     "constraints": {
                         "required": false
                     }
@@ -25,8 +25,8 @@
                     "id": "salesorganisation",
                     "type": "string",
                     "label": "SalesOrganisation",
-                    "readOnly": false,
-                    "value": "${context.salesOrganisation}",
+                    "readOnly": true,
+                    "value": "${context.salesOrderDetails.salesOrganisation}",
                     "constraints": {
                         "required": false
                     }
@@ -35,8 +35,8 @@
                     "id": "orderamount",
                     "type": "integer",
                     "label": "OrderAmount",
-                    "readOnly": false,
-                    "value": "${context.orderAmount}",
+                    "readOnly": true,
+                    "value": "${context.salesOrderDetails.orderAmount}",
                     "constraints": {
                         "required": false
                     }
